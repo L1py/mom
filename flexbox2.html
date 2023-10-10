@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexboxy2 - 3 sloupce layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        .container {
+            width: 1200px;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+        header {
+            height: 150px;
+            background-color: aquamarine;
+        }
+
+        .stred {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .uzky{
+            text-align: left;
+            flex-basis :15%;
+          border:1px solid blue;
+          padding: 0.5em;
+        }
+        .siroky{
+            flex-basis: 70%;
+            border:1px solid black;
+            padding: 0.5em;
+        }
+        footer{
+            height: 1.5em;
+            border: 1px solid blue ;
+            background-color: bisque;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+
+        <div class="stred">
+            <div class="uzky">
+                menu<br>
+                menu<br>
+                menu<br>
+                menu<br>
+                menu<br>
+            </div>
+            <div class="siroky">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aspernatur tempora animi a odio
+                    laboriosam corporis, quibusdam, eligendi modi error similique ducimus pariatur est. Exercitationem,
+                    laboriosam? Sed sunt mollitia adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore, sed. Facilis, maiores? Non dolor assumenda minus ullam, suscipit eum. Molestias aut
+                    aperiam ipsam vel commodi earum quisquam impedit eos nesciunt.lorem Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Error culpa aspernatur, aliquid enim odio voluptas laboriosam totam,
+                    labore sapiente provident harum voluptatem aperiam? Ratione possimus minus delectus molestiae
+                    nesciunt natus?</p>
+            </div>
+            <div class="uzky">
+                menu<br>
+                menu<br>
+                menu<br>
+                menu<br>
+                menu<br>
+            </div>
+        </div>
+
+
+        <footer>
+            Tuto stránku vytvořil Spytihněv Nahněvaný
+        </footer>
+    </div>
+</body>
+
+</html>

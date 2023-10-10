@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="neivm.css" type="text/css">
+    <title>Flexbox crash Course</title>
+</head>
+
+
+
+
+
+<style>
+*
+{
+  box-sizing:border-box;
+  margin:0;
+  padding: 0;
+}
+
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.flex-container{
+    height:400px;
+    display:flex;
+    background-color: azure;
+    flex-direction: row-reverse;
+    /* hlavni osa */
+    justify-content:center; /* zarovnani vodorovne*/
+    align-items:center; /*zarovnani svisle */
+    flex-wrap:wrap;     /*zalamovani polozek, pokub bz se nevesli na radek */
+ 
+}
+
+
+.item
+{
+    height:100px;
+    width:100px;
+    background:#254de4;
+    color:white;
+    margin:10px;
+    /* float:left; */ /* k poznámce pri pouziti float ... vycistit float*/
+}
+
+
+.item:nth-of-type(1) /* nastaveni prvniho prvku v flex-container*/
+{
+
+
+    align-self:flex-start; /*zarovnani svisle*/ /* vedlejší osa */
+    background-color: brown;
+
+
+}
+
+
+.item:nth-of-type(2) /* nastaveni druheho prvku v flex-container*/
+{
+    align-self: center; /*zarovnani svisle*/
+    flex-grow: 1;
+}
+
+
+.item:nth-of-type(3) /* nastaveni tretiho prvku v flex-container*/
+{
+    align-self: flex-end; /*zarovnani svisle*/
+    flex-grow: 2;
+}
+
+
+
+</style>
+
+<body>
+    <div class="flex-container">
+     <div class="item">Item1 itemsss</div>
+     <div class="item">Item2</div>
+     <div class="item">Item3</div>
+    </div>
+
+
+<h3>Hello</h3>
+
+
+<div class="container">
+    <div class="item">Item</div>
+    <div class="item">Item</div>
+    <div class="item">Item</div>
+   </div>
+
+
+</body>
+</html>
